@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+        <!-- light dark mode selector -->
+    </header>
+    <main>
+        <!-- leftside logo/ right side form for posts -->
+        <div class="wrapper">
+            <!-- flex with 2 children -->
+            <div>
+<!-- image logo -->
+            </div>
+            <div class="form">
+                <h2>What's on your mind?</h2>
+                <form action="">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="content">Content:</label><br>
+                    <textarea id="content" name="content" rows="4" cols="50">
+                    </textarea><br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+<!-- form -->
+            </div>
+            <h2 id="lastTitle"></h2>
+            <div id="lastContent"></div>
+            <div id="lastUsername"></div>
+        </div>
+    </main>
+    <script src="js/form.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+</html>

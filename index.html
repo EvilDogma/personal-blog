@@ -13,14 +13,28 @@
     </header>
     <main>
         <!-- leftside logo/ right side form for posts -->
-        <div>
+        <div class="wrapper">
             <!-- flex with 2 children -->
             <div>
 <!-- image logo -->
             </div>
-            <div>
+            <div class="form">
+                <h2>What's on your mind?</h2>
+                <form action="">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="content">Content:</label><br>
+                    <textarea id="content" name="content" rows="4" cols="50">
+                    </textarea><br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
 <!-- form -->
             </div>
+            <h2 id="lastTitle"></h2>
+            <div id="lastContent"></div>
+            <div id="lastUsername"></div>
         </div>
     </main>
     <script src="js/form.js"></script>
